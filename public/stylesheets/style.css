@@ -1,0 +1,119 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+header,
+.heading {
+  text-align: center;
+}
+.form-container {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 250px;
+  background-color: rgba(218, 207, 175, 0.479);
+  border: 2px solid; 
+}
+input,
+textarea {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 18px;
+  margin-bottom: 1em;
+  resize: none;
+}
+.form-add form {
+  width: 500px;
+  height: 350px;
+}
+.radio {
+  text-align: center;
+}
+.btn {
+  margin-top: 1.5rem;
+}
+.btn input {
+  width: 6rem;
+  height: 3rem;
+}
+table {
+  padding: 1em;
+  border: 1px solid;
+  width: 1000px;
+  background: rgba(175, 218, 175, 0.479);
+}
+tr th:last-child,
+td:last-child {
+  text-align:unset;
+}
+thead {
+  font-size: 1.4rem;
+  height: 2em;
+  text-transform: capitalize;
+  text-align: center;
+  height: 4rem;
+}
+tbody {
+  font-size: 1.1rem;
+  margin-bottom: 2em;
+}
+.btn-group input {
+  width: 6em;
+  background-color: limegreen;
+  border: 1px solid transparent;
+  border-radius: 12%;
+  color: white;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+}
+.btn-group button:hover,
+.btn-group input:hover,
+.tfoot-btn input:hover {
+  background-color: rosybrown;
+  transform: scale(1.1);
+}
+.heading a {
+  background: rgb(228, 128, 144);
+  padding: 0.5em 1em;
+  display: inline-block;
+  width: 4em;
+  border-radius: 12%;
+  color: white;
+  font-size: larger;
+  text-align: center;
+  text-decoration: none;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2em 0;
+}
+.bgImg {
+  background-image: url(../images/20e274cb-16e5-492e-9693-d355e9bc0756-e1588202616819.jpeg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+#foto {
+  width: 100%;
+  height: 100px;
+  position: relative;
+  overflow: hidden;
+  padding: .1rem;
+}

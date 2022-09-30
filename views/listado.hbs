@@ -1,0 +1,35 @@
+<main>
+    <div class="heading">
+    <h2><font color="red" size=5>Productos en Stock</font></h2>
+    </div>
+    <table>
+        <thead>
+            <tr class="btn-group">
+                <td colspan="7"><a href="/listado/addItem"><input type="button" value="Agregar"></a></td>
+            </tr>
+            <tr>
+                <th>id</th>
+                <th>año</th>
+                <th>nombre</th>
+                <th>portada</th>
+                <th>contenido</th>
+                <th>acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each discografia}}
+            <tr>
+                <td>{{id_disco}}</td>
+                <td>{{año}}</td>
+                <td>{{nombre}}</td>
+                <td><img src={{portada}} alt="" id="foto"></td>
+                <td><img src={{contenido}} alt="" id="foto"></td>
+                <td class="btn-group">
+                <a href="/listado/handleEdit/{{id_disco}}"><input type="button" value="Borrar"></a>
+                <a href="/listado/handleEdit/{{id_disco}}"><input type="button" value="Editar"></a>
+                </td>
+                </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</main>

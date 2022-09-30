@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Los Prisioneros DB</title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body class="bgImg">
+  <header>
+  </header>
+  <div class="heading">
+    {{#if user}}
+    <p><font color="red" size=5>Hola {{user}}</font></p>
+    <a href="/logout"><font color="black">Cerrar</font></a>
+    {{/if}}
+  </div>
+  {{{body}}}
+</body>
+
+</html>
